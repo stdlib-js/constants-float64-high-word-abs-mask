@@ -35,7 +35,7 @@ limitations under the License.
 To use in Observable,
 
 ```javascript
-FLOAT64_HIGH_WORD_ABS_MASK = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/constants-float64-high-word-abs-mask@umd/browser.js' )
+FLOAT64_HIGH_WORD_ABS_MASK = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/constants-float64-high-word-abs-mask@v0.0.1-umd/browser.js' )
 ```
 
 To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
@@ -47,7 +47,7 @@ var FLOAT64_HIGH_WORD_ABS_MASK = require( 'path/to/vendor/umd/constants-float64-
 To include the bundle in a webpage,
 
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/constants-float64-high-word-abs-mask@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/constants-float64-high-word-abs-mask@v0.0.1-umd/browser.js"></script>
 ```
 
 If no recognized module system is present, access bundle contents via the global scope:
@@ -101,7 +101,7 @@ var bool = ( FLOAT64_HIGH_WORD_ABS_MASK === 0x7fffffff );
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-get-high-word@umd/browser.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-get-low-word@umd/browser.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-from-words@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/constants-float64-high-word-abs-mask@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/constants-float64-high-word-abs-mask@v0.0.1-umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
 
