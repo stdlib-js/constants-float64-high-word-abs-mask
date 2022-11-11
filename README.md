@@ -33,6 +33,11 @@ limitations under the License.
 <!-- eslint-disable id-length -->
 
 ```javascript
+import FLOAT64_HIGH_WORD_ABS_MASK from 'https://cdn.jsdelivr.net/gh/stdlib-js/constants-float64-high-word-abs-mask@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/constants-float64-high-word-abs-mask/tags). For example,
+
+```javascript
 import FLOAT64_HIGH_WORD_ABS_MASK from 'https://cdn.jsdelivr.net/gh/stdlib-js/constants-float64-high-word-abs-mask@v0.0.1-deno/mod.js';
 ```
 
@@ -74,7 +79,7 @@ var bool = ( FLOAT64_HIGH_WORD_ABS_MASK === 0x7fffffff );
 import getHighWord from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-get-high-word@deno/mod.js';
 import getLowWord from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-get-low-word@deno/mod.js';
 import fromWords from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-from-words@deno/mod.js';
-import FLOAT64_HIGH_WORD_ABS_MASK from 'https://cdn.jsdelivr.net/gh/stdlib-js/constants-float64-high-word-abs-mask@v0.0.1-deno/mod.js';
+import FLOAT64_HIGH_WORD_ABS_MASK from 'https://cdn.jsdelivr.net/gh/stdlib-js/constants-float64-high-word-abs-mask@deno/mod.js';
 
 var x = -11.5;
 var hi = getHighWord( x ); // 1 10000000010 01110000000000000000
