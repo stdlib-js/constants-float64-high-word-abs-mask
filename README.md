@@ -24,7 +24,23 @@ limitations under the License.
 
 > High word mask for excluding the sign bit of a [double-precision floating-point number][ieee754].
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/constants-float64-high-word-abs-mask
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
@@ -33,7 +49,7 @@ limitations under the License.
 <!-- eslint-disable id-length -->
 
 ```javascript
-import FLOAT64_HIGH_WORD_ABS_MASK from 'https://cdn.jsdelivr.net/gh/stdlib-js/constants-float64-high-word-abs-mask@deno/mod.js';
+var FLOAT64_HIGH_WORD_ABS_MASK = require( '@stdlib/constants-float64-high-word-abs-mask' );
 ```
 
 #### FLOAT64_HIGH_WORD_ABS_MASK
@@ -71,10 +87,10 @@ var bool = ( FLOAT64_HIGH_WORD_ABS_MASK === 0x7fffffff );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import getHighWord from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-get-high-word@deno/mod.js';
-import getLowWord from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-get-low-word@deno/mod.js';
-import fromWords from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-from-words@deno/mod.js';
-import FLOAT64_HIGH_WORD_ABS_MASK from 'https://cdn.jsdelivr.net/gh/stdlib-js/constants-float64-high-word-abs-mask@deno/mod.js';
+var getHighWord = require( '@stdlib/number-float64-base-get-high-word' );
+var getLowWord = require( '@stdlib/number-float64-base-get-low-word' );
+var fromWords = require( '@stdlib/number-float64-base-from-words' );
+var FLOAT64_HIGH_WORD_ABS_MASK = require( '@stdlib/constants-float64-high-word-abs-mask' );
 
 var x = -11.5;
 var hi = getHighWord( x ); // 1 10000000010 01110000000000000000
@@ -95,7 +111,57 @@ out = fromWords( out, getLowWord( x ) );
 
 <!-- C interface documentation. -->
 
+* * *
 
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/constants/float64/high_word_abs_mask.h"
+```
+
+#### STDLIB_CONSTANT_FLOAT64_HIGH_WORD_ABS_MASK
+
+Macro for the high word mask for excluding the sign bit of a [double-precision floating-point number][ieee754].
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
@@ -114,7 +180,7 @@ out = fromWords( out, getLowWord( x ) );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -158,7 +224,7 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 -->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
-[chat-url]: https://gitter.im/stdlib-js/stdlib/
+[chat-url]: https://app.gitter.im/#/room/#stdlib-js_stdlib:gitter.im
 
 [stdlib]: https://github.com/stdlib-js/stdlib
 
