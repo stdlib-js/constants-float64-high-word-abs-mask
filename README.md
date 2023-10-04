@@ -44,6 +44,11 @@ limitations under the License.
 <!-- eslint-disable id-length -->
 
 ```javascript
+import FLOAT64_HIGH_WORD_ABS_MASK from 'https://cdn.jsdelivr.net/gh/stdlib-js/constants-float64-high-word-abs-mask@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/constants-float64-high-word-abs-mask/tags). For example,
+
+```javascript
 import FLOAT64_HIGH_WORD_ABS_MASK from 'https://cdn.jsdelivr.net/gh/stdlib-js/constants-float64-high-word-abs-mask@v0.1.1-esm/index.mjs';
 ```
 
@@ -90,7 +95,7 @@ var bool = ( FLOAT64_HIGH_WORD_ABS_MASK === 0x7fffffff );
 import getHighWord from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-get-high-word@esm/index.mjs';
 import getLowWord from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-get-low-word@esm/index.mjs';
 import fromWords from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-from-words@esm/index.mjs';
-import FLOAT64_HIGH_WORD_ABS_MASK from 'https://cdn.jsdelivr.net/gh/stdlib-js/constants-float64-high-word-abs-mask@v0.1.1-esm/index.mjs';
+import FLOAT64_HIGH_WORD_ABS_MASK from 'https://cdn.jsdelivr.net/gh/stdlib-js/constants-float64-high-word-abs-mask@esm/index.mjs';
 
 var x = -11.5;
 var hi = getHighWord( x ); // 1 10000000010 01110000000000000000
