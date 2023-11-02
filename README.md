@@ -35,23 +35,7 @@ limitations under the License.
 
 > High word mask for excluding the sign bit of a [double-precision floating-point number][ieee754].
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/constants-float64-high-word-abs-mask
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-</section>
 
 <section class="usage">
 
@@ -59,8 +43,32 @@ The [branches.md][branches-url] file summarizes the available branches and displ
 
 <!-- eslint-disable id-length -->
 
+To use in Observable,
+
 ```javascript
-var FLOAT64_HIGH_WORD_ABS_MASK = require( '@stdlib/constants-float64-high-word-abs-mask' );
+FLOAT64_HIGH_WORD_ABS_MASK = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/constants-float64-high-word-abs-mask@umd/browser.js' )
+```
+
+To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
+
+```javascript
+var FLOAT64_HIGH_WORD_ABS_MASK = require( 'path/to/vendor/umd/constants-float64-high-word-abs-mask/index.js' )
+```
+
+To include the bundle in a webpage,
+
+```html
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/constants-float64-high-word-abs-mask@umd/browser.js"></script>
+```
+
+If no recognized module system is present, access bundle contents via the global scope:
+
+```html
+<script type="text/javascript">
+(function () {
+    window.FLOAT64_HIGH_WORD_ABS_MASK;
+})();
+</script>
 ```
 
 #### FLOAT64_HIGH_WORD_ABS_MASK
@@ -97,11 +105,16 @@ var bool = ( FLOAT64_HIGH_WORD_ABS_MASK === 0x7fffffff );
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var getHighWord = require( '@stdlib/number-float64-base-get-high-word' );
-var getLowWord = require( '@stdlib/number-float64-base-get-low-word' );
-var fromWords = require( '@stdlib/number-float64-base-from-words' );
-var FLOAT64_HIGH_WORD_ABS_MASK = require( '@stdlib/constants-float64-high-word-abs-mask' );
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-get-high-word@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-get-low-word@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-from-words@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/constants-float64-high-word-abs-mask@umd/browser.js"></script>
+<script type="text/javascript">
+(function () {
 
 var x = -11.5;
 var hi = getHighWord( x ); // 1 10000000010 01110000000000000000
@@ -114,6 +127,11 @@ var out = hi & FLOAT64_HIGH_WORD_ABS_MASK; // 0 10000000010 01110000000000000000
 // Generate a new value:
 out = fromWords( out, getLowWord( x ) );
 // returns 11.5
+
+})();
+</script>
+</body>
+</html>
 ```
 
 </section>
@@ -122,57 +140,7 @@ out = fromWords( out, getLowWord( x ) );
 
 <!-- C interface documentation. -->
 
-* * *
 
-<section class="c">
-
-## C APIs
-
-<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
-
-<section class="intro">
-
-</section>
-
-<!-- /.intro -->
-
-<!-- C usage documentation. -->
-
-<section class="usage">
-
-### Usage
-
-```c
-#include "stdlib/constants/float64/high_word_abs_mask.h"
-```
-
-#### STDLIB_CONSTANT_FLOAT64_HIGH_WORD_ABS_MASK
-
-Macro for the high word mask for excluding the sign bit of a [double-precision floating-point number][ieee754].
-
-</section>
-
-<!-- /.usage -->
-
-<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
-
-<section class="notes">
-
-</section>
-
-<!-- /.notes -->
-
-<!-- C API usage examples. -->
-
-<section class="examples">
-
-</section>
-
-<!-- /.examples -->
-
-</section>
-
-<!-- /.c -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
