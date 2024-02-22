@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/constants-float64-high-word-abs-mask",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "High word mask for excluding the sign bit of a double-precision floating-point number.",
   "license": "Apache-2.0",
   "author": {
@@ -36,13 +36,13 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/utils-library-manifest": "^0.2.0"
+    "@stdlib/utils-library-manifest": "^0.2.1"
   },
   "devDependencies": {
-    "@stdlib/number-float64-base-from-words": "^0.1.1",
-    "@stdlib/number-float64-base-get-high-word": "^0.1.1",
-    "@stdlib/number-float64-base-get-low-word": "^0.1.1",
-    "@stdlib/number-uint32-base-to-binary-string": "^0.1.1",
+    "@stdlib/number-float64-base-from-words": "^0.2.0",
+    "@stdlib/number-float64-base-get-high-word": "^0.2.0",
+    "@stdlib/number-float64-base-get-low-word": "^0.2.0",
+    "@stdlib/number-uint32-base-to-binary-string": "^0.2.0",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",
     "tap-min": "git+https://github.com/Planeshifter/tap-min.git"
