@@ -36,13 +36,13 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/utils-library-manifest": "^0.2.1"
+    "@stdlib/utils-library-manifest": "^0.2.2"
   },
   "devDependencies": {
-    "@stdlib/number-float64-base-from-words": "^0.2.1",
-    "@stdlib/number-float64-base-get-high-word": "^0.2.1",
-    "@stdlib/number-float64-base-get-low-word": "^0.2.1",
-    "@stdlib/number-uint32-base-to-binary-string": "^0.2.1",
+    "@stdlib/number-float64-base-from-words": "^0.2.2",
+    "@stdlib/number-float64-base-get-high-word": "^0.2.2",
+    "@stdlib/number-float64-base-get-low-word": "^0.2.2",
+    "@stdlib/number-uint32-base-to-binary-string": "^0.2.2",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",
     "tap-min": "git+https://github.com/Planeshifter/tap-min.git"
